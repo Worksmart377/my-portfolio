@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,500&display=swap');
+
+
 
 .App {
   text-align: center;
+  font-family: 'Source Code Pro', monospace;
 
 }
 nav {
@@ -10,6 +14,11 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(2.3px);
 -webkit-backdrop-filter: blur(2.3px);
 border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.show>.dropdown-menu {
+  display: block;
+  position: absolute;
 }
 
 
