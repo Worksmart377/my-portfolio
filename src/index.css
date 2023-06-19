@@ -6,3 +6,7 @@
 h1{
     font-family: 'Comforter','Dancing Script', cursive;
 }
+
+li{
+    list-style: none;
+}
