@@ -16,10 +16,38 @@ backdrop-filter: blur(2.3px);
 border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.show>.dropdown-menu {
-  display: block;
-  position: absolute;
+.dropdown-menu {
+  background: rgba(255, 255, 255, 0.51);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.3px);
+-webkit-backdrop-filter: blur(2.3px);
+border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.dropdown-item {
+  font-size: medium;
+  color: black;
+}
 
+.navbar-collapse.collapse {
+  background: rgba(255, 255, 255, 0.51);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.3px);
+  -webkit-backdrop-filter: blur(2.3px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.dropdown-menu.show {
+  background: rgba(255, 255, 255, 0.51);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.3px);
+  -webkit-backdrop-filter: blur(2.3px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.navbar.navbar-expand-lg {
+width: 100%;
+}
 

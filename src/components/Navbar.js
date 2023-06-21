@@ -1,85 +1,39 @@
 import React from 'react';
 import Logo from '../assets/SN-logo.jpg';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import $ from 'jquery';
-import { useState } from 'react';
+import {Navbar, Nav, NavDropdown, NavLink } from 'react-bootstrap';
+import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 
-const Navbar = () => {
-    const [nav, setNav] = useState(false)
-    const handleClick= ()=> setNav(!nav)
-  return (
-    <div>
-      <nav
-        class='navbar navbar-expand-lg'
-        data-bs-theme='dark'
-        style={{ height: '150px' }}
-      >
-        <div class='container-fluid'>
-          <a class='navbar-brand' href='#'>
-            <img src={Logo} alt='SN Logo' style={{ width: '150px' }} />
-          </a>
+const MyNavbar = () => {
+    return (
+        <div>
+            <Navbar sticky='top' expand='sm' collapseOnSelect>
+                <nav class='navbar navbar-expand-lg'data-bs-theme='light'style={{ height: '150px' }}>        
+                    <div class='container-fluid'>
 
-          <div class='collapse navbar-collapse' id='navbarColor02'>
-            <ul class='navbar-nav me-auto'>
-              <li class='nav-item'>
-                <a class='nav-link active' href='#'>
-                  Home
-                  <span class='visually-hidden'>(current)</span>
-                </a>
-              </li>
-              <li class='nav-item'>
-                <a class='nav-link' href='#'>
-                  About
-                </a>
-              </li>
-              <li class='nav-item'>
-                <a class='nav-link' href='#'>
-                  Skills
-                </a>
-              </li>
-              <li class='nav-item'>
-                <a class='nav-link' href='#'>
-                  Contact
-                </a>
-              </li>
-              <li class='nav-item dropdown'>
-                <a
-                  class='nav-link dropdown-toggle'
-                  data-bs-toggle='dropdown'
-                  href='#'
-                  role='button'
-                  aria-haspopup='true'
-                  aria-expanded='false'
-                >
-                  My Work
-                </a>
-                <div class='dropdown-menu'>
-                  <a class='dropdown-item' href='#'>
-                    Programming
-                  </a>
-                  <div class='dropdown-divider'></div>
-                  <a class='dropdown-item' href='#'>
-                    Art & Design
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </div>
+                        <Navbar.Brand>
+                            <a class='navbar-brand' href='About'>
+                            <img src={Logo} alt='SN Logo' style={{ width: '150px' }} />
+                            </a>           
+                        </Navbar.Brand>
+                        <Navbar.Toggle/>
+                        <Navbar.Collapse>
+                        <Nav>
+                        
+                            <NavLink href='About'>About</NavLink>
+                            <NavLink href='Skills'>Skills</NavLink>
+                            <NavLink href='Contact'>Contact</NavLink>
+                            <NavDropdown title='My Work'>
+                                <NavDropdown.Item href='Programming'>Programming</NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item href='Art & Design'>Art & Design</NavDropdown.Item>
+                            </NavDropdown>
+                        </Nav>
+                        </Navbar.Collapse>
+                    </div>
+                </nav>      
+            </Navbar>
         </div>
-        <div onclick={handleClick} className='container-sm'>
-          {!nav ? <FaBars /> : <FaTimes />}
-        </div>
-        <ul className={!nav ? '.d-none' : 'container-sm' }>
-          <li>Home</li>
-          <li>About</li>
-          <li>Skills</li>
-          <li>My Programming Work</li>
-          <li>My Art & Design Work</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
-    </div>
-  );
+    );
 };
 
-export default Navbar;
+export default MyNavbar;
