@@ -7,6 +7,10 @@ h1{
     font-family: 'Comforter','Dancing Script', cursive;
 }
 
+h5{
+    color: whitesmoke;
+}
+
 li{
     list-style: none;
 }
