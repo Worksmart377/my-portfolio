@@ -36,8 +36,7 @@ const About = () => {
                         <FaBehanceSquare size={40} />
                         </a>
                     </div>
-                    <div class='card-footer text-muted'>2 days ago
-                </div>
+                
             </div>
         </div>
     );

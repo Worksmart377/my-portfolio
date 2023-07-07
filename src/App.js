@@ -2,6 +2,7 @@ import './App.css';
 import About from './components/About';
 import Skills from './components/Skills';
 import MyNavbar from './components/Navbar';
+import WorkProgramming from './components/WorkProgramming';
 import 'bootstrap/dist/css/bootstrap.css';
 
 
@@ -12,6 +13,7 @@ function App() {
     <MyNavbar />
     <About />
     <Skills />
+    <WorkProgramming />
     </div>
   );
 }

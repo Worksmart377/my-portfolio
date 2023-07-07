@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,500&display=swap');
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
 
 
 
@@ -7,6 +9,9 @@
   font-family: 'Source Code Pro', monospace;
 
 }
+
+/* NavBar */
+
 nav {
   /* From https://css.glass */
 background: rgba(255, 255, 255, 0.13);
@@ -98,20 +103,38 @@ margin-top: 0%;
 
 /* Skills */
 
-@keyframes slide {
-  from{
-    transform: translateX(0);
-  }
-  to{
-    transform: translateX(-100%);
 
-  }
+
+.img-container {
+  width: 50%;
+  margin: 5rem auto;
+  height: 200px;
 }
 
-.logos{
-  white-space: nowrap;
-  overflow: hidden;
-  padding: 30px 0;
+.slide img {
+  width: 8rem;
+  margin: 10px auto;
+}
+
+.slide {
+  transform: scale(0.2);
+  transition: 300ms;
+  opacity: 0.5;
+}
+
+.activeSlide{
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.skills-paragraph {
+  margin-top: 50px;
+}
+
+
+/* WorkProgramming */
+
+.grid {
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2.3px);
@@ -120,23 +143,24 @@ margin-top: 0%;
   border-radius: 10px;
 }
 
-
-.logos:hover .logos-slide{
-  animation-play-state: paused;
+.card-item{
+  margin: 20px 20px;
+  border-radius: 10%;
+  background-repeat:no-repeat ;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  /* box-shadow: 3px 3px gray, -1em 0 .4em gold; */
 }
 
-div.logos-slide {
-  animation: 25s slide infinite linear ;
-  display: inline-block;
+.card-item:hover {
+  background-image: linear-gradient(
+    to right,
+    whitesmoke
+    hsla(242, 74%, 61%, 0.8)
+  );
 }
 
-.logos-slide>img {
-  height: 100px;
-  width: 100px;
-  margin: 0 40px;
-}
-
-
-.canva {
-  border-radius: 50%;
+.card-btns button{
+  margin: 20px 20px;
 }
