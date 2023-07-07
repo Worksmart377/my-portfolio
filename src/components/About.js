@@ -2,7 +2,7 @@ import React from 'react';
 import Profile from '../assets/profilepic.png';
 import Pink from '../assets/pink.png';
 import Blue from '../assets/blue.png';
-import { FaGithub, FaLinkedin, FaBehanceSquare } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaBehanceSquare, FaEtsy } from 'react-icons/fa';
 
 
 const About = () => {
@@ -34,6 +34,9 @@ const About = () => {
                         </a>&nbsp;
                         <a href='https://www.behance.net/MrsN377'>
                         <FaBehanceSquare size={40} />
+                        </a>
+                        <a href='https://www.PlatinumStyleIcons.etsy.com'>
+                        <FaEtsy size={40} />
                         </a>
                     </div>
                 

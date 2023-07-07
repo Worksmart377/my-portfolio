@@ -144,23 +144,27 @@ margin-top: 0%;
 }
 
 .card-item{
-  margin: 20px 20px;
-  border-radius: 10%;
+  margin: 30px 30px;
+  border-radius: 5%;
   background-repeat:no-repeat ;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-  height: 250px;
-  /* box-shadow: 3px 3px gray, -1em 0 .4em gold; */
+  height: 320px;
 }
 
-.card-item:hover {
-  background-image: linear-gradient(
-    to right,
-    whitesmoke
-    hsla(242, 74%, 61%, 0.8)
-  );
-}
 
 .card-btns button{
-  margin: 20px 20px;
+  margin-top: 260px;
+  margin-left: 30px;
+}
+
+.card-paragraph-div {
+  margin: 30px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-description{
+  font-weight: bolder;
+  background-color: rgba(255, 255, 255, 0.18);
 }
