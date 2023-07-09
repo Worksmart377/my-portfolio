@@ -182,3 +182,29 @@ margin-top: 0%;
   font-size: large;
   color: whitesmoke;
 }
+
+/* Contact */
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  margin: 50px 50px;
+  padding: 20px 20px;
+
+}
+
+.contact button{
+  margin-top: 20px;
+  width: 200px;
+  align-self: center;
+}
+
+input {
+  margin: 10px 10px;
+  padding: 10px 10px;
+}
+
+textarea {
+  margin: 10px 10px;
+  padding: 10px 10px;
+}

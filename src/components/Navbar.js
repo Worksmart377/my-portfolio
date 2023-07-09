@@ -4,7 +4,7 @@ import {Navbar, Nav, NavDropdown, NavLink } from 'react-bootstrap';
 import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 import { HiOutlineMail, HiOutlineDocumentText } from 'react-icons/hi';
 import { FaGithub, FaLinkedin, FaBehanceSquare } from 'react-icons/fa';
-
+import { Link } from 'react-scroll';
 
 const MyNavbar = () => {
     return (
@@ -21,8 +21,8 @@ const MyNavbar = () => {
                         <Navbar.Collapse>
                         <Nav>
                         
-                            <NavLink href='About'>About</NavLink>
-                            <NavLink href='Skills'>Skills</NavLink>
+                            <NavLink href='About'> <Link to="about"  smooth={true} offset={50} duration={500}> About </Link></NavLink>
+                            <NavLink href='Skills'> <Link to="skills"  smooth={true} offset={50} duration={500}> Skills </Link></NavLink>
                             <NavDropdown title='Contact'>
                                 <NavDropdown.Item href='https://www.linkedin.com/in/stephany-nelson'><FaLinkedin size={40} /></NavDropdown.Item>
                                 <NavDropdown.Divider />
