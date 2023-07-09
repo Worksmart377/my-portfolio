@@ -141,21 +141,34 @@ margin-top: 0%;
   -webkit-backdrop-filter: blur(2.3px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
 }
 
 .card-item{
   margin: 30px 30px;
-  border-radius: 5%;
   background-repeat:no-repeat ;
   background-size: contain;
   background-position: center;
-  height: 320px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.home-page {
+  width: 500px;
+  height: 300px;
 }
 
 
 .card-btns button{
-  margin-top: 260px;
   margin-left: 30px;
+  margin-top: 30px;
 }
 
 .card-paragraph-div {
@@ -166,5 +179,6 @@ margin-top: 0%;
 
 .project-description{
   font-weight: bolder;
-  background-color: rgba(255, 255, 255, 0.18);
+  font-size: large;
+  color: whitesmoke;
 }
