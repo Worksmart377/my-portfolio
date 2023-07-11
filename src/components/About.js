@@ -8,9 +8,9 @@ import { FaGithub, FaLinkedin, FaBehanceSquare, FaEtsy } from 'react-icons/fa';
 const About = () => {
     return (
         <div name='about' className='about-container'>
-            <div class='card mb-3'>
+            <div class='card mb-3 about'>
                 <h3 class='card-header'>Hi, I'm Steph! </h3>
-                <div class='card-body'>
+                <div class='card-body about'>
                     <h5 class='card-title'>
                         I am a Wife, Software Engineer, Creator & Artist.
                     </h5>

@@ -87,10 +87,12 @@ margin-top: 0%;
 .about-container{
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.card.mb-3 {
+.card.mb-3.about{
   justify-content: center;
+  align-items: center;
   margin-top: 50px;
   max-width: 800px;
   background: rgba(255, 255, 255, 0.15);
@@ -100,6 +102,7 @@ margin-top: 0%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 10px;
 }
+
 
 /* Skills */
 
@@ -132,55 +135,61 @@ margin-top: 0%;
 }
 
 
-/* WorkProgramming */
+/* WorkProgramming/Design */
 
 .grid {
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(2.3px);
-  -webkit-backdrop-filter: blur(2.3px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 10px;
   display: grid;
+  place-items: center;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 1px;
   grid-row-gap: 1px;
 }
 
-.card-item{
-  margin: 30px 30px;
-  background-repeat:no-repeat ;
-  background-size: contain;
-  background-position: center;
-  height: fit-content;
-  display: flex;
+.card.mb-3{
   align-items: center;
+
+}
+
+.card-body.programming{
+  margin: 30px 30px;
+  padding: 40px 40px;
+  height: fit-content;
+  width: 550px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.card-header {
+  width: 30rem;
+  color: whitesmoke;
 
 }
 
 .home-page {
-  width: 500px;
+  width: 400px;
   height: 300px;
+  align-self: center;
+  border: 2px inset #3fcbfb;
 }
 
-
-.card-btns button{
-  margin-left: 30px;
-  margin-top: 30px;
-}
-
-.card-paragraph-div {
-  margin: 30px 30px;
-  display: flex;
-  flex-direction: column;
-}
 
 .project-description{
   font-weight: bolder;
   font-size: large;
   color: whitesmoke;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.3px);
+  -webkit-backdrop-filter: blur(2.3px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  
 }
 
 /* Contact */
@@ -193,10 +202,11 @@ margin-top: 0%;
 
 }
 
-.contact button{
+button{
   margin-top: 20px;
-  width: 200px;
+  width: fit-content;
   align-self: center;
+  margin-left: 10px;
 }
 
 input {
