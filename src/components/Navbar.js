@@ -2,9 +2,12 @@ import React from 'react';
 import Logo from '../assets/SN-logo.jpg';
 import {Navbar, Nav, NavDropdown, NavLink } from 'react-bootstrap';
 import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
-import { HiOutlineMail, HiOutlineDocumentText } from 'react-icons/hi';
+import { HiOutlineMail } from 'react-icons/hi';
 import { FaGithub, FaLinkedin, FaBehanceSquare } from 'react-icons/fa';
 import { Link } from 'react-scroll';
+import WorkDesign from './WorkDesign';
+import WorkProgramming from './WorkProgramming';
+
 
 const MyNavbar = () => {
     return (
@@ -30,14 +33,12 @@ const MyNavbar = () => {
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item href='https://www.behance.net/MrsN377'><FaBehanceSquare size={40} /></NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href='Email'><HiOutlineMail size={40} /></NavDropdown.Item>                                
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href='Resume'><HiOutlineDocumentText size={40} /></NavDropdown.Item>
+                                <NavDropdown.Item href='Contact'><Link to="contact"  smooth={true} offset={50} duration={500}><HiOutlineMail size={40}/></Link></NavDropdown.Item>                                
                                 </NavDropdown>                            
                                 <NavDropdown title='My Work'>
-                                <NavDropdown.Item href='Programming'>Programming</NavDropdown.Item>
+                                <NavDropdown.Item href="WorkProgramming"> <Link to="work"  smooth={true} offset={50} duration={500}>Programming</Link></NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href='Art & Design'>Art & Design</NavDropdown.Item>
+                                <NavDropdown.Item href="WorkDesign"> <Link to="design"  smooth={true} offset={50} duration={500}>Art & Design</Link></NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
                         </Navbar.Collapse>

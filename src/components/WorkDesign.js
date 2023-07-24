@@ -4,7 +4,7 @@ import Turtle from '../assets/Turtle.png';
 
 const WorkDesign = () => {
     return (
-    <div name='work'>
+    <div name='design'>
         <div className='paragraph-div'>
         <h2>My Design Work</h2>
         <p>Check out some of my recent work</p>
