@@ -5,8 +5,7 @@ import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 import { HiOutlineMail } from 'react-icons/hi';
 import { FaGithub, FaLinkedin, FaBehanceSquare } from 'react-icons/fa';
 import { Link } from 'react-scroll';
-import WorkDesign from './WorkDesign';
-import WorkProgramming from './WorkProgramming';
+
 
 
 const MyNavbar = () => {
