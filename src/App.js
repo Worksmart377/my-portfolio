@@ -6,7 +6,8 @@ import WorkProgramming from './components/WorkProgramming';
 import WorkDesign from './components/WorkDesign';
 import Contact from './components/Contact';
 
-import 'bootstrap/dist/css/bootstrap.css';
+import "bootswatch/dist/lux/bootstrap.min.css";
+
 
 
 

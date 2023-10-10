@@ -12,11 +12,11 @@ const MyNavbar = () => {
     return (
         <div>
             <Navbar sticky='top' expand='sm' collapseOnSelect>
-                <nav class='navbar navbar-expand-lg navbar-light bg-transparent' style={{ height: '150px' }}>        
+                <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark" >        
                     <div class='container-fluid'>
                         <Navbar.Brand>
                             <a class='navbar-brand' href='About'>
-                            <img src={Logo} alt='SN Logo' style={{ width: '150px' }} />
+                            <img src={Logo} alt='SN Logo' style={{ width: '200px' }} />
                             </a>           
                         </Navbar.Brand>
                         <NavbarToggle/>
