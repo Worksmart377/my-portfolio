@@ -15,16 +15,16 @@
 .container-fluid {
   display: flex;
   margin-top: 0%;
+  padding: 0;
   width: 100%;
 }
 
 a.nav-link {
   font-size: large;
+  color: whitesmoke;
 }
 
-.navbar navbar-expand-sm navbar-light sticky-top {
-padding: 0px;
-}
+
 
 
 /* About */
