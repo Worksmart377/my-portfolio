@@ -87,6 +87,9 @@ a.nav-link {
 .skills-paragraph {
   margin-top: 50px;
 }
+.slick-prev:before, .slick-next:before  {
+  color: black;
+}
 
 
 /* WorkProgramming/Design */
