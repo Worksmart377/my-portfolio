@@ -1,5 +1,5 @@
 import React from 'react';
-import Profile from '../assets/profilepic.png';
+import Profile from '../assets/profilepic3.png';
 import Pink from '../assets/pink.png';
 import { FaGithub, FaLinkedin, FaBehanceSquare, FaEtsy } from 'react-icons/fa';
 

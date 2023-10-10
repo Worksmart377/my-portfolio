@@ -22,9 +22,9 @@ a.nav-link {
   font-size: large;
 }
 
-/* .navbar navbar-expand-sm navbar-light sticky-top {
-  display: block;
-} */
+.navbar navbar-expand-sm navbar-light sticky-top {
+padding: 0px;
+}
 
 
 /* About */
