@@ -14,7 +14,7 @@ const Contact = () => {
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name='email'/>            
             <label for="Textarea" class="form-label mt-4">Message</label>
             <textarea class="form-control" id="exampleTextarea" rows="10" placeholder='Enter Message' name='message'></textarea>            
-            <button className='btn btn-outline-dark'>Contact Me</button>
+            <button className='btn btn-outline-primary'>Contact Me</button>
         </form>
     </div>
     )
