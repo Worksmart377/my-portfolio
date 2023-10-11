@@ -23,7 +23,7 @@ const MyNavbar = () => {
                         <Navbar.Collapse>
                         <Nav>
                         
-                            <NavLink href='About'> <Link to="about"  smooth={true} offset={50} duration={500}> About </Link></NavLink>
+                            <NavLink href='About'> <Link to="about"  smooth={true} offset={50} duration={500} > About </Link></NavLink>
                             <NavLink href='Skills'> <Link to="skills"  smooth={true} offset={50} duration={500}> Skills </Link></NavLink>
                             <NavDropdown title='Contact'>
                                 <NavDropdown.Item href='https://www.linkedin.com/in/stephany-nelson'><FaLinkedin size={40} /></NavDropdown.Item>

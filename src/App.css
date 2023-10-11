@@ -115,7 +115,12 @@ a.card-link{
 }
 .slick-prev:before, .slick-next:before  {
   color: black;
+  font-size: 30px;
+
 }
+
+
+
 
 
 /* WorkProgramming/Design */
