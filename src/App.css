@@ -11,6 +11,24 @@
 }
 
 /* NavBar */
+nav {
+  width: 100%;
+  border-bottom: 2px inset #dcac63;
+  box-shadow: 0 3px 10px #dcac63;
+  height: 30vmin
+
+}
+
+.navbar {
+  padding: 0;
+  color: whitesmoke;
+
+}
+
+.navbar navbar-expand-lg bg-primary{
+  padding-top: 0;
+
+}
 
 .container-fluid {
   display: flex;
@@ -22,6 +40,11 @@
 a.nav-link {
   font-size: large;
   color: whitesmoke;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: whitesmoke;
+  font-size: large;
 }
 
 
@@ -47,7 +70,7 @@ a.nav-link {
 .card.mb-3.about{
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 200px;
   max-width: 800px;
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 0 3px 20px #dcac63;
@@ -57,6 +80,9 @@ a.nav-link {
   border-radius: 10px;
 }
 
+a.card-link{
+  color: #55595c;
+}
 
 /* Skills */
 
@@ -170,4 +196,9 @@ input {
 textarea {
   margin: 10px 10px;
   padding: 10px 10px;
+}
+
+.form-control {
+  background-color: rgb(220,173,99,0.25);
+  border: 1px solid #55595c;
 }

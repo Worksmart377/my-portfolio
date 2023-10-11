@@ -42,7 +42,7 @@ const WorkProgramming = () => {
                 <img className='home-page' src={Tokens} alt='home page' />
                 <div className='btns'>
                 <a href='https://turtle-tokesn.herokuapp.com/'>
-                  <button className='btn btn-outline-primary'>Demo</button>
+                  <button className='btn btn-outline-secondary'>Demo</button>
                 </a>
                 <a href='https://github.com/Worksmart377/turtle-tokens'>
                   <button className='btn btn-outline-secondary'>Code</button>

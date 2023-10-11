@@ -37,10 +37,10 @@ const About = () => {
                         <a href='https://github.com/Worksmart377' class='card-link'>
                         <FaGithub size={40} />
                         </a>&nbsp;
-                        <a href='https://www.behance.net/MrsN377'>
+                        <a href='https://www.behance.net/MrsN377' class='card-link'>
                         <FaBehanceSquare size={40} />
                         </a>
-                        <a href='https://www.PlatinumStyleIcons.etsy.com'>
+                        <a href='https://www.PlatinumStyleIcons.etsy.com' class='card-link'>
                         <FaEtsy size={40} />
                         </a>
                     </div>
