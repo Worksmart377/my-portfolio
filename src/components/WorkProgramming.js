@@ -41,7 +41,7 @@ const WorkProgramming = () => {
               <p class="card-text">This application is meant for the user who is brand new to cryptocurrency. It is a resource for the user to learn the basics of crypto and get information on the most popular coins. In this time where everything is moving into a digital age, I believe that knowledge and action on these topics can help users to transition into the new financial system seemlessly. None of the information given is meant to give financial advice in anyway.</p>
                 <img className='home-page' src={Tokens} alt='home page' />
                 <div className='btns'>
-                <a href='https://turtle-tokesn.herokuapp.com/'>
+                <a href='https://turtle-tokens-b67ad2710207.herokuapp.com/'>
                   <button className='btn btn-outline-secondary'>Demo</button>
                 </a>
                 <a href='https://github.com/Worksmart377/turtle-tokens'>
@@ -61,7 +61,7 @@ const WorkProgramming = () => {
               <p class="card-text">Meal planning can be a pain, especially on a busy schedule. We wanted to build a weekly planner application that would give the user some organizational assistance. You will find a page to create recipes, a page to view and update the recipes, as well as a shopping list page to view any ingredients the user may need to grab for the week.</p>
                 <img className='home-page' src={Meal} alt='home page' />
                 <div className='btns'>
-                <a href='https://young-badlands-56713.herokuapp.com/'>
+                <a href='https://best-meal-planner.herokuapp.com/'>
                   <button className='btn btn-outline-secondary'>Demo</button>
                 </a>
                 <a href='https://github.com/Worksmart377/meal-planner'>
